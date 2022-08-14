@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/music-logo3.png"
+      type="image/x-icon"
+    />
+    <title>Music Player</title>
+    <!-- include css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <div class="left-logo">
+          <img src="./images/music-logo3.png" alt="logo" />
+          <h4><span>Music</span>Studio</h4>
+          <h6>Favourites</h6>
+        </div>
+        <div class="menu-icon">
+          <button class="menu-btn">
+            <img src="./images/menu.png" alt="menu" />
+          </button>
+        </div>
+        <div class="right">
+          <div class="search">
+            <input type="text" placeholder="search" />
+            <img class="search-icon" src="./images/search.png" alt="search" />
+            <img class="mic" src="./images/mic.png" alt="mic" />
+          </div>
+          <div class="notification">
+            <img src="./images/notification.png" alt="notification" />
+          </div>
+          <div class="men">
+            <img src="./images/avataaars.svg" alt="men" />
+          </div>
+        </div>
+        <div class="mobile-menu">
+          <div class="menu-main">
+            <div class="close">
+              <i class="fas fa-times"></i>
+            </div>
+            <div class="search">
+              <input type="text" placeholder="search" />
+              <img class="search-icon" src="./images/search.png" alt="search" />
+              <img class="mic" src="./images/mic.png" alt="mic" />
+            </div>
+            <div class="notification">
+              <p>Notifications</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main body -->
+    <main>
+      <section class="home">
+        <div class="container">
+          <div class="row">
+            <div class="col-9">
+              <!-- main slider home -->
+              <div class="slider">
+                <div>
+                  <div class="slide">
+                    <img src="./images/album-1.jpg" alt="album" />
+                  </div>
+                </div>
+                <div>
+                  <div class="slide">
+                    <img src="./images/album-2.jpg" alt="album" />
+                  </div>
+                </div>
+                <div>
+                  <div class="slide">
+                    <img src="./images/album-3.jpg" alt="album" />
+                  </div>
+                </div>
+                <div>
+                  <div class="slide">
+                    <img src="./images/album-1.jpg" alt="album" />
+                  </div>
+                </div>
+                <div>
+                  <div class="slide">
+                    <img src="./images/album-2.jpg" alt="album" />
+                  </div>
+                </div>
+                <div>
+                  <div class="slide">
+                    <img src="./images/album-3.jpg" alt="album" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- after slider latest release section -->
+              <div class="latest-release">
+                <h2>Latest Release</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="latest-content">
+                      <div class="left">
+                        <div class="left-content">
+                          <img src="./images/img1.jpg" alt="latest" />
+                        </div>
+                        <div class="right-content">
+                          <h4>Himesh</h4>
+                          <p>April 22, 2022</p>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <img src="./images/three-dots.png" alt="dots" />
+                        <p>4:44</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="latest-content">
+                      <div class="left">
+                        <div class="left-content">
+                          <img src="./images/img2.jpg" alt="latest" />
+                        </div>
+                        <div class="right-content">
+                          <h4>Tu Mere Dil Mein</h4>
+                          <p>April 22, 2022</p>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <img src="./images/three-dots.png" alt="dots" />
+                        <p>4:44</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="latest-content">
+                      <div class="left">
+                        <div class="left-content">
+                          <img src="./images/img4.jpg" alt="latest" />
+                        </div>
+                        <div class="right-content">
+                          <h4>Aashiqui Aa Gayi</h4>
+                          <p>April 22, 2022</p>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <img src="./images/three-dots.png" alt="dots" />
+                        <p>4:44</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="latest-content">
+                      <div class="left">
+                        <div class="left-content">
+                          <img src="./images/img5.jpg" alt="latest" />
+                        </div>
+                        <div class="right-content">
+                          <h4>Aashiqui</h4>
+                          <p>April 22, 2022</p>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <img src="./images/three-dots.png" alt="dots" />
+                        <p>4:44</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- popular artist section -->
+              <div class="popular-artist">
+                <h2>Popular Artists</h2>
+                <div class="row">
+                  <div class="col-2">
+                    <div class="artist-details">
+                      <a href="./single.html">
+                      <img src="./images/shreya.jpg" alt="artist" />
+                      </a>
+                      <h5>Shreya Ghoshal</h5>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="artist-details">
+                      <a href="./sonunigam.html">
+                      <img src="./images/sonu.jpg" alt="artist" />
+                      </a>
+                      <h5>Sonu Nigam</h5>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="artist-details">
+                      <img src="./images/Lata_Mangeshkar.jpg" alt="artist" />
+                      <h5>Lata Mangeshkar</h5>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="artist-details">
+                      <img
+                        src="./images/Arijit_Singh_500x500.jpg"
+                        alt="artist"
+                      />
+                      <h5>Arijit Singh</h5>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="artist-details">
+                      <img
+                        src="./images/Justin_Bieber_005_20201127112218_500x500.jpg"
+                        alt="artist"
+                      />
+                      <h5>Justin Bieber</h5>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="artist-details">
+                      <img
+                        src="./images/Himesh_Reshammiya_500x500.jpg"
+                        alt="artist"
+                      />
+                      <h5>Himesh Reshammiya</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- channels section -->
+              <div class="channels">
+                <div class="row">
+                  <div class="col-2">
+                    <img
+                      src="./images/channel-main.png"
+                      alt="channel"
+                      class="main-channel"
+                    />
+                  </div>
+                  <div class="col-10">
+                    <div class="row">
+                      <div class="col-2">
+                        <div class="channel-single">
+                          <img src="./images/channel-1.jpg" alt="channel" />
+                          <p>Love</p>
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <div class="channel-single">
+                          <img src="./images/channel-2.jpg" alt="channel" />
+                          <p>Retro</p>
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <div class="channel-single">
+                          <img src="./images/channel-3.jpg" alt="channel" />
+                          <p>Chill</p>
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <div class="channel-single">
+                          <img src="./images/channel-4.jpg" alt="channel" />
+                          <p>Workout</p>
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <div class="channel-single">
+                          <img src="./images/channel-5.jpg" alt="channel" />
+                          <p>Rock</p>
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <div class="channel-single">
+                          <img src="./images/channel-6.jpg" alt="channel" />
+                          <p>Pop</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- after channel three pic section -->
+              <div class="after-channel">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="./images/party.jpg" alt="party" />
+                    <p>Party</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./images/electronic.jpg" alt="electronic" />
+                    <p>Electronic</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./images/roadtrip.jpg" alt="roadtrip" />
+                    <p>Roadtrip</p>
+                  </div>
+                </div>
+              </div>
+              <!-- latest english -->
+              <div class="latest">
+                <h2>Latest English</h2>
+                <div class="row">
+                  <div class="col-2">
+                    <div class="album-cntent">
+                      <img src="./images/img12.jpg" alt="album1" />
+                      <h6>About Damn Time</h6>
+                      <p>April 23, 2022</p>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="album-cntent">
+                      <img
+                        src="./images/Dirty-Little-Secret-English-2022-20220520114611-500x500.jpg"
+                        alt="album1"
+                      />
+                      <h6>Dirty Little Secret</h6>
+                      <p>April 23, 2022</p>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="album-cntent">
+                      <img
+                        src="./images/Honest-English-2022-20220429103635-500x500.jpg"
+                        alt="album1"
+                      />
+                      <h6>Honest</h6>
+                      <p>April 23, 2022</p>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="album-cntent">
+                      <img
+                        src="./images/Purpose-English-2015-500x500.jpg"
+                        alt="album1"
+                      />
+                      <h6>Love Yourself</h6>
+                      <p>April 23, 2022</p>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="album-cntent">
+                      <img
+                        src="./images/Stay-English-2021-20210706223809-500x500.jpg"
+                        alt="album1"
+                      />
+                      <h6>STAY</h6>
+                      <p>April 23, 2022</p>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="album-cntent">
+                      <img
+                        src="./images/Justice-English-2021-20210325102906-500x500.jpg"
+                        alt="album1"
+                      />
+                      <h6>Peaches</h6>
+                      <p>April 23, 2022</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- latest hindi -->
+              <div class="latest">
+                <h2>Latest Hindi</h2>
+                <div class="row">
+                  <div class="col-2">
+                    <div class="album-cntent">
+                      <img
+                        src="./images/Shershaah-Original-Motion-Picture-Soundtrack--Hindi-2021-20210815181610-500x500.jpg"
+                        alt="album1"
+                      />
+                      <h6>Raataan Lambiyan</h6>
+                      <p>April 24, 2022</p>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="album-cntent">
+                      <img
+                        src="./images/Taaron-Ke-Shehar-Hindi-2020-20200920035507-500x500.jpg"
+                        alt="album1"
+                      />
+                      <h6>Taaron Ke Shehar</h6>
+                      <p>April 24, 2022</p>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="album-cntent">
+                      <img
+                        src="./images/Dhokha-Hindi-2022-20220210031007-500x500.jpg"
+                        alt="album1"
+                      />
+                      <h6>Dhokha Lyrics</h6>
+                      <p>April 24, 2022</p>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="album-cntent">
+                      <img
+                        src="./images/Tadap-Hindi-2021-20211203151001-500x500.jpg"
+                        alt="album1"
+                      />
+                      <h6>Tumse Bhi Zyada Lyrics</h6>
+                      <p>April 24, 2022</p>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="album-cntent">
+                      <img
+                        src="./images/Shiddat-Hindi-2021-20210922172609-500x500.jpg"
+                        alt="album1"
+                      />
+                      <h6>Shiddat Title Track Lyrics</h6>
+                      <p>April 25, 2022</p>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <div class="album-cntent">
+                      <img
+                        src="./images/Tumse-Bhi-Zyada-From-Tadap--Hindi-2021-20211102031001-500x500.jpg"
+                        alt="album1"
+                      />
+                      <h6>Tumse Bhi Zyada (From "Tadap") Lyrics</h6>
+                      <p>April 25, 2022</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="home-right">
+                <div class="right-top">
+                  <h2>Queue</h2>
+                  <p>
+                    Queue <span><i class="fas fa-chevron-down"></i></span>
+                  </p>
+                </div>
+                <div class="queue-data">
+                  <!-- single queue -->
+                  <div class="single-queue">
+                    <div class="left">
+                      <div class="number">01</div>
+                      <div class="queue">
+                        <img src="./images/thumbnail-1.jpg" alt="thumbnail" />
+                        <div class="queue-details">
+                          <h4>Lut Gaye</h4>
+                          <p>5:00</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="heart">
+                      <img src="./images/heart.png" alt="heart" />
+                    </div>
+                  </div>
+                  <div class="single-queue">
+                    <div class="left">
+                      <div class="number">02</div>
+                      <div class="queue">
+                        <img src="./images/thumbnail-2.jpg" alt="thumbnail" />
+                        <div class="queue-details">
+                          <h4>Dekhte Dekhte</h4>
+                          <p>2:50</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="heart">
+                      <img src="./images/heart.png" alt="heart" />
+                    </div>
+                  </div>
+                  <div class="single-queue">
+                    <div class="left">
+                      <div class="number">03</div>
+                      <div class="queue">
+                        <img src="./images/thumbnail-3.jpg" alt="thumbnail" />
+                        <div class="queue-details">
+                          <h4>Dil Pe</h4>
+                          <p>3:30</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="heart">
+                      <img src="./images/heart.png" alt="heart" />
+                    </div>
+                  </div>
+                  <div class="single-queue">
+                    <div class="left">
+                      <div class="number">04</div>
+                      <div class="queue">
+                        <img src="./images/thumbnail-4.jpg" alt="thumbnail" />
+                        <div class="queue-details">
+                          <h4>Dillagi</h4>
+                          <p>4:00</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="heart">
+                      <img src="./images/heart.png" alt="heart" />
+                    </div>
+                  </div>
+                  <div class="single-queue">
+                    <div class="left">
+                      <div class="number">05</div>
+                      <div class="queue">
+                        <img src="./images/img5.jpg" alt="thumbnail" />
+                        <div class="queue-details">
+                          <h4>Radhe Shyam</h4>
+                          <p>4:10</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="heart">
+                      <img src="./images/heart.png" alt="heart" />
+                    </div>
+                  </div>
+                  <div class="single-queue">
+                    <div class="left">
+                      <div class="number">06</div>
+                      <div class="queue">
+                        <img src="./images/thumbnail-6.jpg" alt="thumbnail" />
+                        <div class="queue-details">
+                          <h4>Shiddat</h4>
+                          <p>3:40</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="heart">
+                      <img src="./images/heart.png" alt="heart" />
+                    </div>
+                  </div>
+                  <div class="single-queue">
+                    <div class="left">
+                      <div class="number">07</div>
+                      <div class="queue">
+                        <img src="./images/img4.jpg" alt="thumbnail" />
+                        <div class="queue-details">
+                          <h4>Aashiqui</h4>
+                          <p>3:20</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="heart">
+                      <img src="./images/heart.png" alt="heart" />
+                    </div>
+                  </div>
+                  <div class="single-queue">
+                    <div class="left">
+                      <div class="number">08</div>
+                      <div class="queue">
+                        <img src="./images/thumbnail-1.jpg" alt="thumbnail" />
+                        <div class="queue-details">
+                          <h4>Lut Gaye</h4>
+                          <p>5:00</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="heart">
+                      <img src="./images/heart.png" alt="heart" />
+                    </div>
+                  </div>
+                  <div class="single-queue">
+                    <div class="left">
+                      <div class="number">09</div>
+                      <div class="queue">
+                        <img src="./images/thumbnail-2.jpg" alt="thumbnail" />
+                        <div class="queue-details">
+                          <h4>Dekhte Dekhte</h4>
+                          <p>4:20</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="heart">
+                      <img src="./images/heart.png" alt="heart" />
+                    </div>
+                  </div>
+                  <div class="single-queue">
+                    <div class="left">
+                      <div class="number">10</div>
+                      <div class="queue">
+                        <img src="./images/thumbnail-3.jpg" alt="thumbnail" />
+                        <div class="queue-details">
+                          <h4>Dil Pe Zekhm</h4>
+                          <p>3:15</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="heart">
+                      <img src="./images/heart.png" alt="heart" />
+                    </div>
+                  </div>
+                  <div class="single-queue">
+                    <div class="left">
+                      <div class="number">11</div>
+                      <div class="queue">
+                        <img src="./images/thumbnail-4.jpg" alt="thumbnail" />
+                        <div class="queue-details">
+                          <h4>Dillagi</h4>
+                          <p>3:10</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="heart">
+                      <img src="./images/heart.png" alt="heart" />
+                    </div>
+                  </div>
+                  <div class="single-queue">
+                    <div class="left">
+                      <div class="number">12</div>
+                      <div class="queue">
+                        <img src="./images/Tadap-Hindi-2021-20211203151001-500x500.jpg" alt="thumbnail" />
+                        <div class="queue-details">
+                          <h4>Tadap</h4>
+                          <p>4:30</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="heart">
+                      <img src="./images/heart.png" alt="heart" />
+                    </div>
+                  </div>
+                  <div class="single-queue">
+                    <div class="left">
+                      <div class="number">13</div>
+                      <div class="queue">
+                        <img src="./images/Shershaah-Original-Motion-Picture-Soundtrack--Hindi-2021-20210815181610-500x500.jpg" alt="thumbnail" />
+                        <div class="queue-details">
+                          <h4>Shershaah</h4>
+                          <p>3:30</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="heart">
+                      <img src="./images/heart.png" alt="heart" />
+                    </div>
+                  </div>
+                  <div class="single-queue">
+                    <div class="left">
+                      <div class="number">14</div>
+                      <div class="queue">
+                        <img src="./images/Taaron-Ke-Shehar-Hindi-2020-20200920035507-500x500.jpg" alt="thumbnail" />
+                        <div class="queue-details">
+                          <h4>Taaron Ke Shehar</h4>
+                          <p>2:20</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="heart">
+                      <img src="./images/heart.png" alt="heart" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <div class="footer-left">
+              <img
+                src="./images/song-thumbnail.png"
+                alt="song-thumbnail"
+                class="thumbnail"
+              />
+              <div class="right-content">
+                <div class="name-heart-block">
+                  <span class="song-name">Imagine by John </span
+                  ><span class="span-image"
+                    ><img src="./images/heart.png" alt="heart" /></span
+                  ><span class="span-image"
+                    ><img src="./images/block.png" alt="block"
+                  /></span>
+                </div>
+                <p>John Lenon</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="footer-main">
+              <div>
+                <div class="footer-main-top">
+                  <img src="./images/shuffle.png" alt="music" class="shuffle" />
+                  <img
+                    src="./images/previous.png"
+                    alt="music"
+                    class="previous"
+                  />
+                  <img src="./images/play.png" alt="music" class="play" />
+                  <img src="./images/next.png" alt="music" class="next" />
+                  <img src="./images/repeat.png" alt="music" class="repeat" />
+                </div>
+                <div class="footer-main-bottom">
+                  <p>1:39</p>
+                  <input type="range" class="range" />
+                  <p>4:45</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="footer-right">
+              <div class="right-main">
+                <img src="./images/playlist.png" alt="music" class="playlist" />
+                <img src="./images/pc.png" alt="music" class="pc" />
+                <img src="./images/speaker.png" alt="music" class="speaker" />
+                <input type="range" class="speaker-range" />
+                <img src="./images/arrow.png" alt="music" class="arrow" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/main.js"></script>
+
+    <script>
+      $(".slider").slick({
+        centerMode: true,
+        centerPadding: "200px",
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              arrows: true,
+              centerMode: true,
+              centerPadding: "200px",
+              slidesToShow: 1,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: true,
+              centerMode: true,
+              centerPadding: "10px",
+              slidesToShow: 1,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: true,
+              centerMode: true,
+              centerPadding: "10px",
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
+    </script>
+  </body>
+</html>

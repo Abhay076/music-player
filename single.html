@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/music-logo3.png" type="image/x-icon">
+    <title>Music Player</title>
+    <!-- include css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <div class="left-logo">
+                <img src="./images/music-logo3.png" alt="logo">
+                <h4><span>Music</span>Studio</h4>
+                <h6>Favourites</h6>
+            </div>
+            <div class="menu-icon">
+                <button class="menu-btn"><img src="./images/menu.png" alt="menu"></button>
+            </div>
+            <div class="right">
+                <div class="search">
+                    <input type="text" placeholder="search">
+                    <img class="search-icon" src="./images/search.png" alt="search">
+                    <img class="mic" src="./images/mic.png" alt="mic" />
+                </div>
+                <div class="notification">
+                    <img src="./images/notification.png" alt="notification">
+                </div>
+                <div class="men">
+                    <img src="./images/avataaars.svg" alt="men">
+                </div>
+            </div>
+            <div class="mobile-menu">
+                <div class="menu-main">
+                    <div class="close">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="search">
+                        <img class="search-icon" src="./images/search.png" alt="search">
+                        <img class="mic" src="./images/mic.png" alt="mic" />
+                    </div>
+                    <div class="notification">
+                        <p>Notifications</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main body -->
+    <main class="single">
+        <section class="home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-9">
+                        <!-- main top section -->
+                        <div class="single-home">
+                            <div class="row">
+                                <div class="col-5">
+                                    <img src="./images/shreya.jpg" alt="single">
+                                </div>
+                                <div class="col-7">
+                                    <div class="main-home">
+                                        <div class="top">
+                                            <div>
+                                                <h1>Shreya Ghoshal</h1>
+                                                <h6>Artist </h6>
+                                            </div>
+                                            <p>851 followers</p>
+                                        </div>
+                                        <p class="desc">Shreya's mellifluous voice and rich tonal quality have a spell binding effect on all music lovers. Shreya Ghoshal has indeed come far with her wide-ranging renditions of human emotions in her songs that have enthralled millions in India and abroad.</p>
+                                        <div class="main-bottom">
+                                            <div class="col-8">
+                                                <div class="bottom-top">
+                                                    <div class="bottom-top-btn">
+                                                        <button>Play All</button>
+                                                    </div>
+                                                    <span>Follow</span>
+                                                </div>
+                                                <p>247 Tracks | 128 Albums</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- main song list section -->
+                        <div class="song-list">
+                            <div class="single-queue">
+                                <div class="left">
+                                    <div class="number">01</div>
+                                    <div class="queue">
+                                        <img src="./images/Aashiq-Banaya-Aapne-Hindi-2005-500x500.jpg" alt="thumbnail">
+                                        <div class="queue-details">
+                                            <h4>Aashiq Banaya Aapne</h4>
+                                            <p>Himesh | Shreya Ghoshal</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time">
+                                    <p>6:03</p>
+                                </div>
+                                <div class="heart">
+                                    <img src="./images/heart.png" alt="heart">
+                                    <img src="./images/plus.png" alt="plus" class="plus">
+                                </div>
+                            </div>
+                            <div class="single-queue">
+                                <div class="left">
+                                    <div class="number">02</div>
+                                    <div class="queue">
+                                        <img src="./images/Sanak-Hindi-2021-20211012105203-500x500.jpg" alt="thumbnail">
+                                        <div class="queue-details">
+                                            <h4>Suna Hai</h4>
+                                            <p>Shreya Ghoshal</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time">
+                                    <p>3:15</p>
+                                </div>
+                                <div class="heart">
+                                    <img src="./images/heart.png" alt="heart">
+                                    <img src="./images/plus.png" alt="plus" class="plus">
+                                </div>
+                            </div>
+                            <div class="single-queue">
+                                <div class="left">
+                                    <div class="number">03</div>
+                                    <div class="queue">
+                                        <img src="./images/Kabir-Singh-Hindi-2019-20190614075009-500x500.jpg" alt="thumbnail">
+                                        <div class="queue-details">
+                                            <h4>Yeh Aaina</h4>
+                                            <p>Shreya Ghoshal</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time">
+                                    <p>5:11</p>
+                                </div>
+                                <div class="heart">
+                                    <img src="./images/heart.png" alt="heart">
+                                    <img src="./images/plus.png" alt="plus" class="plus">
+                                </div>
+                            </div>
+                            <div class="single-queue">
+                                <div class="left">
+                                    <div class="number">04</div>
+                                    <div class="queue">
+                                        <img src="./images/NGK-Tamil-2019-20190430104657-500x500.jpg" alt="thumbnail">
+                                        <div class="queue-details">
+                                            <h4>Anbae Peranbae</h4>
+                                            <p>Sriram | Shreya Ghoshal</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time">
+                                    <p>4:29</p>
+                                </div>
+                                <div class="heart">
+                                    <img src="./images/heart.png" alt="heart">
+                                    <img src="./images/plus.png" alt="plus" class="plus">
+                                </div>
+                            </div>
+                            <div class="single-queue">
+                                <div class="left">
+                                    <div class="number">05</div>
+                                    <div class="queue">
+                                        <img src="./images/Aashiqui-2-Hindi-2013-500x500.jpg" alt="thumbnail">
+                                        <div class="queue-details">
+                                            <h4>Sunn Raha Hai</h4>
+                                            <p>Shreya Ghoshal</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time">
+                                    <p>5:14</p>
+                                </div>
+                                <div class="heart">
+                                    <img src="./images/heart.png" alt="heart">
+                                    <img src="./images/plus.png" alt="plus" class="plus">
+                                </div>
+                            </div>
+                            <div class="single-queue">
+                                <div class="left">
+                                    <div class="number">06</div>
+                                    <div class="queue">
+                                        <img src="./images/Guru-Hindi-2006-20190516131307-500x500.jpg" alt="thumbnail">
+                                        <div class="queue-details">
+                                            <h4>Barso Re</h4>
+                                            <p>A.R.Rahman,Shreya Ghoshal</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time">
+                                    <p>5:28</p>
+                                </div>
+                                <div class="heart">
+                                    <img src="./images/heart.png" alt="heart">
+                                    <img src="./images/plus.png" alt="plus" class="plus">
+                                </div>
+                            </div>
+                            <div class="single-queue">
+                                <div class="left">
+                                    <div class="number">07</div>
+                                    <div class="queue">
+                                        <img src="./images/Agneepath-Hindi-2011-20190603132941-500x500.jpg" alt="thumbnail">
+                                        <div class="queue-details">
+                                            <h4>Chikni Chameli</h4>
+                                            <p>Ajay-Atul,Shreya Ghoshal</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time">
+                                    <p>5:03</p>
+                                </div>
+                                <div class="heart">
+                                    <img src="./images/heart.png" alt="heart">
+                                    <img src="./images/plus.png" alt="plus" class="plus">
+                                </div>
+                            </div>
+                            <div class="single-queue">
+                                <div class="left">
+                                    <div class="number">08</div>
+                                    <div class="queue">
+                                        <img src="./images/Heropanti-2014-500x500.jpg" alt="thumbnail">
+                                        <div class="queue-details">
+                                            <h4>Raat Bhar</h4>
+                                            <p>Arijit Singh,Shreya Ghoshal</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time">
+                                    <p>5:26</p>
+                                </div>
+                                <div class="heart">
+                                    <img src="./images/heart.png" alt="heart">
+                                    <img src="./images/plus.png" alt="plus" class="plus">
+                                </div>
+                            </div>
+                            <div class="single-queue">
+                                <div class="left">
+                                    <div class="number">09</div>
+                                    <div class="queue">
+                                        <img src="./images/V-Telugu-2020-20200828173314-500x500.jpg" alt="thumbnail">
+                                        <div class="queue-details">
+                                            <h4>Vastunna Vachestunna</h4>
+                                            <p>Shreya Ghoshal, Amit Trivedi</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time">
+                                    <p>3:32</p>
+                                </div>
+                                <div class="heart">
+                                    <img src="./images/heart.png" alt="heart">
+                                    <img src="./images/plus.png" alt="plus" class="plus">
+                                </div>
+                            </div>
+                            <div class="single-queue">
+                                <div class="left">
+                                    <div class="number">10</div>
+                                    <div class="queue">
+                                        <img src="./images/Baaghi-2-Hindi-2018-20180320-500x500.jpg" alt="thumbnail">
+                                        <div class="queue-details">
+                                            <h4>Ek Do Teen</h4>
+                                            <p>Shreya Ghoshal, Parry G</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="time">
+                                    <p>4:04</p>
+                                </div>
+                                <div class="heart">
+                                    <img src="./images/heart.png" alt="heart">
+                                    <img src="./images/plus.png" alt="plus" class="plus">
+                                </div>
+                            </div>
+                        </div>
+                        
+                 
+                        
+                    </div>
+                    <div class="col-3">
+                        <div class="home-right">
+                            <div class="right-top">
+                                <h2>Similar Artists</h2>
+                                <p>View all</p>
+                            </div>
+                            <div class="queue-data">
+                                <!-- single queue -->
+                                <div class="single-queue">
+                                    <div class="left">
+                                        <div class="number">01</div>
+                                        <div class="queue">
+                                            <img src="./images/Kuch-Baatein-Hindi-2022-20220310031017-500x500.jpg" alt="thumbnail">
+                                            <div class="queue-details">
+                                                <h4>Kuch Baatein</h4>
+                                                <p>4:45</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="heart">
+                                        <img src="./images/heart.png" alt="heart">
+                                    </div>
+                                </div>
+                                <div class="single-queue">
+                                    <div class="left">
+                                        <div class="number">02</div>
+                                        <div class="queue">
+                                            <img src="./images/O-Aasman-Wale-Hindi-2022-20220121031005-500x500.jpg" alt="thumbnail">
+                                            <div class="queue-details">
+                                                <h4>O Aasman Wale</h4>
+                                                <p>4:59</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="heart">
+                                        <img src="./images/heart.png" alt="heart">
+                                    </div>
+                                </div>
+                                <div class="single-queue">
+                                    <div class="left">
+                                        <div class="number">03</div>
+                                        <div class="queue">
+                                            <img src="./images/Nayan-Hindi-2020-20201208051000-500x500.jpg" alt="thumbnail">
+                                            <div class="queue-details">
+                                                <h4>Nayan</h4>
+                                                <p>4:14</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="heart">
+                                        <img src="./images/heart.png" alt="heart">
+                                    </div>
+                                </div>
+                                <div class="single-queue">
+                                    <div class="left">
+                                        <div class="number">04</div>
+                                        <div class="queue">
+                                            <img src="./images/Garmi-Non-Stop-Dance-Mix-Hindi-2020-20201228161048-500x500.jpg" alt="thumbnail">
+                                            <div class="queue-details">
+                                                <h4>Garmi Non Stop</h4>
+                                                <p>1:00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="heart">
+                                        <img src="./images/heart.png" alt="heart">
+                                    </div>
+                                </div>
+                                <div class="single-queue">
+                                    <div class="left">
+                                        <div class="number">05</div>
+                                        <div class="queue">
+                                            <img src="./images/Mehendi-Hindi-2021-20211125235938-500x500.jpg" alt="thumbnail">
+                                            <div class="queue-details">
+                                                <h4>Mehendi</h4>
+                                                <p>4:07</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="heart">
+                                        <img src="./images/heart.png" alt="heart">
+                                    </div>
+                                </div>
+                                <div class="single-queue">
+                                    <div class="left">
+                                        <div class="number">06</div>
+                                        <div class="queue">
+                                            <img src="./images/Batla-House-Hindi-2019-20190814231555-500x500.jpg" alt="thumbnail">
+                                            <div class="queue-details">
+                                                <h4>Rula Diya</h4>
+                                                <p>4:39</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="heart">
+                                        <img src="./images/heart.png" alt="heart">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="right-top">
+                                <h2>Recently played</h2>
+                                <p>View all</p>
+                            </div>
+                            <div class="queue-data">
+                                <!-- single queue -->
+                                <div class="single-queue">
+                                    <div class="left">
+                                        <div class="number">01</div>
+                                        <div class="queue">
+                                            <img src="./images/Satyameva-Jayate-Hindi-2018-20180801-500x500.jpg" alt="thumbnail">
+                                            <div class="queue-details">
+                                                <h4>Tajdar-E-Haram</h4>
+                                                <p>4:51</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="heart">
+                                        <img src="./images/heart.png" alt="heart">
+                                    </div>
+                                </div>
+                                <div class="single-queue">
+                                    <div class="left">
+                                        <div class="number">02</div>
+                                        <div class="queue">
+                                            <img src="./images/Naad-E-Ali-feat-Salim-Merchant-Raj-Pandit-Salman-Ali-Vipul-Mehta--Hindi-2021-20220118025939-500x500.jpg" alt="thumbnail">
+                                            <div class="queue-details">
+                                                <h4>Naad E Ali</h4>
+                                                <p>7:10</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="heart">
+                                        <img src="./images/heart.png" alt="heart">
+                                    </div>
+                                </div>
+                                <div class="single-queue">
+                                    <div class="left">
+                                        <div class="number">03</div>
+                                        <div class="queue">
+                                            <img src="./images/I-Am-A-Disco-Dancer-2-0-Tiger-Shroff-Hindi-2020-20200317125519-500x500.jpg" alt="thumbnail">
+                                            <div class="queue-details">
+                                                <h4>I Am A Disco Dancer</h4>
+                                                <p>3:06</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="heart">
+                                        <img src="./images/heart.png" alt="heart">
+                                    </div>
+                                </div>
+                                <div class="single-queue">
+                                    <div class="left">
+                                        <div class="number">04</div>
+                                        <div class="queue">
+                                            <img src="./images/Radhe-Your-Most-Wanted-Bhai-Hindi-2021-20210504140020-500x500.jpg" alt="thumbnail">
+                                            <div class="queue-details">
+                                                <h4>Seeti Maar</h4>
+                                                <p>4:03</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="heart">
+                                        <img src="./images/heart.png" alt="heart">
+                                    </div>
+                                </div>
+                                <div class="single-queue">
+                                    <div class="left">
+                                        <div class="number">05</div>
+                                        <div class="queue">
+                                            <img src="./images/Tubelight-Hindi-2017-500x500.jpg" alt="thumbnail">
+                                            <div class="queue-details">
+                                                <h4>Naach Meri Jaan</h4>
+                                                <p>4:47</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="heart">
+                                        <img src="./images/heart.png" alt="heart">
+                                    </div>
+                                </div>
+                                <div class="single-queue">
+                                    <div class="left">
+                                        <div class="number">06</div>
+                                        <div class="queue">
+                                            <img src="./images/Tum-Mile-Hindi-2009-20190617160526-500x500.jpg" alt="thumbnail">
+                                            <div class="queue-details">
+                                                <h4>Dil Ibaadat</h4>
+                                                <p>5:29</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="heart">
+                                        <img src="./images/heart.png" alt="heart">
+                                    </div>
+                                </div>
+                                <div class="single-queue">
+                                    <div class="left">
+                                        <div class="number">07</div>
+                                        <div class="queue">
+                                            <img src="./images/Baadshaho-Hindi-2017-20170819135132-500x500.jpg" alt="thumbnail">
+                                            <div class="queue-details">
+                                                <h4>Mere Rashke Qamar</h4>
+                                                <p>3:40</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="heart">
+                                        <img src="./images/heart.png" alt="heart">
+                                    </div>
+                                </div>
+                                <div class="single-queue">
+                                    <div class="left">
+                                        <div class="number">08</div>
+                                        <div class="queue">
+                                            <img src="./images/Aila-Re-Ailaa-Bollywood-Nonstop-Remix-2021-Hindi-2021-20220201131006-500x500.jpg" alt="thumbnail">
+                                            <div class="queue-details">
+                                                <h4>Aila Re Ailaa</h4>
+                                                <p>4:40</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="heart">
+                                        <img src="./images/heart.png" alt="heart">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="footer-left">
+                        <img src="./images/song-thumbnail.png" alt="song-thumbnail" class="thumbnail">
+                        <div class="right-content">
+                            <div class="name-heart-block"><span class="song-name">Imagine by John </span><span class="span-image"><img src="./images/heart.png" alt="heart"></span><span class="span-image"><img src="./images/block.png" alt="block"></span></div>
+                            <p>John Lenon</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="footer-main">
+                        <div>
+                            <div class="footer-main-top">
+                                <img src="./images/shuffle.png" alt="music" class="shuffle">
+                                <img src="./images/previous.png" alt="music" class="previous">
+                                <img src="./images/play.png" alt="music" class="play">
+                                <img src="./images/next.png" alt="music" class="next">
+                                <img src="./images/repeat.png" alt="music" class="repeat">
+                            </div>
+                            <div class="footer-main-bottom">
+                                <p>1:39</p>
+                                <input type="range" class="range">
+                                <p>4:45</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="footer-right">
+                        <div class="right-main">
+                            <img src="./images/playlist.png" alt="music" class="playlist">
+                            <img src="./images/pc.png" alt="music" class="pc">
+                            <img src="./images/speaker.png" alt="music" class="speaker">
+                            <input type="range" class="speaker-range" >
+                            <img src="./images/arrow.png" alt="music" class="arrow">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="./js/main.js"></script>
+
+</body>
+
+</html>
